@@ -1,0 +1,292 @@
+body, html{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    color:rgb(0, 0, 0);
+    background-color: darkslateblue;
+}
+.headeer{
+    background-color: rgba(10, 56, 97, 0.6);
+    text-align: center;
+    color: rgb(235, 248, 255);
+    font-size: large;
+    padding: 10px;
+}
+.headeer>P{
+    font-size: x-large;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color: aliceblue;
+}
+nav a{
+    min-width: 150px;
+}
+.back-img{
+    background-image: url('./vecteezy_abstract-circuit-on-white-and-gray-gradient-background_6513142.jpg');
+    min-height:100%;
+    position:relative;
+    opacity:0.80;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+.ptext{
+    position:absolute;
+    top:30%;
+    width:100%;
+    text-align:center;
+    color:rgb(0, 0, 0);
+    font-size:100%;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    background-color: rgb(197, 223, 245,0.6);
+    border-radius: 5%;
+}
+
+.ptext .border{
+    color:rgb(250, 0, 0);
+    padding:20px;
+    font-size:200%;
+    letter-spacing:8px;
+    display:contents;
+    justify-content:center;
+    word-wrap:break-word;
+    text-shadow: 2px 1px 2px rgb(0, 0, 0);
+}
+
+/*class routine */
+
+.classroutine{
+    background-color: cornflowerblue;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    overflow: scroll;
+}
+
+.timetable{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: rgb(25, 62, 132);
+    gap: 5px;
+    overflow-wrap: break-word;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.time, .monday, .tuesday, .wednesday, .thursday, .friday{
+    display: grid;
+    justify-content:stretch;
+    text-align: center;
+    row-gap: 5px;
+    background-color: rgb(25, 62, 132);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cell1, .cell2, .cell3, .cell4, .cell5, .cell6, .cell7, .cell8, .cell9, .cell10, .cell11, .cell12{
+    padding: 4px;
+    min-width: 85px;
+    word-wrap:break-word;
+}
+
+/*grid design*/
+.time{
+    grid-template-rows: repeat(9, 1fr);
+}
+.monday{
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
+}
+.tuesday{
+    grid-template-rows: 1fr 1fr 3fr 1fr 1fr 2fr;
+}
+.wednesday{
+    grid-template-rows: 1fr 1fr 1fr 2fr 1fr 1fr 2fr;
+}
+.thursday{
+    grid-template-rows: 1fr 1fr 1fr 2fr 1fr 1fr 2fr;
+}
+.friday{
+    grid-template-rows: 1fr 1fr 1fr 2fr 1fr 1fr 2fr;
+}
+
+/*cell background colour*/
+.cell1, .cell7{
+    background-color: rgb(107, 131, 175);
+}
+.cell2, .cell8{
+    background-color: rgb(133, 239, 227);
+}
+.cell3, .cell9{
+    background-color: rgb(186, 255, 146);
+}
+.cell4, .cell10{
+    background-color: rgb(230, 255, 146);
+}
+.cell5 , .cell11{
+    background-color: rgb(255, 235, 146);
+}
+.cell6, .cell12{
+    background-color: rgb(255, 148, 146);
+}
+
+/*background image 2*/
+.back-img2{
+    background-image: url('./vecteezy_abstract-circuit-on-white-and-gray-gradient-background_6513142.jpg');
+    min-height:100%;
+    position:relative;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+.back-img2>.ptext{
+    background-image: radial-gradient(rgb(179, 255, 255,0.85),rgb(255, 255, 255,0.50));
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    top:20%;
+}
+
+/*todays classes*/
+#b3{
+    background-color: darkslateblue;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    overflow: scroll;
+}
+.todayclass{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    color: black;
+    row-gap: 5px;
+    background-image: linear-gradient(darkblue,black);
+    padding: 10px;
+}
+.timee{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    gap: 5px;
+    text-align: center;
+}
+.w0,.w1,.w2,.w3,.w4,.w5{
+    display: none;
+}
+.wc0,.wc1,.wc2,.wc3,.wc4,.wc5{
+    display: grid;
+    gap: 5px;
+}
+.wc0{
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
+}
+.wc1{
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr 2fr;
+}
+.wc2{
+    grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 2fr;
+}
+.wc3{
+    grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 2fr;
+}
+.wc4{
+    grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 2fr;
+}
+.wc5{
+    grid-template-columns:9fr;
+    text-align: center;
+    color:#000;
+    background-color: rgb(151, 255, 151);
+    font-size:xx-large;
+}
+
+
+/*class now & next */
+#b4{
+    background-color: darkslateblue;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+}
+.cnn{
+    background-image: linear-gradient(darkblue,black);
+    color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(15,1fr);
+    grid-template-rows: 3fr,9fr;
+    padding: 10px;
+}
+.now, .next, .hd, .nocls{
+    background-color: rgb(199, 255, 247);
+    color: #000;
+    display: flex;
+    flex-flow: column;
+}
+.hd{
+    background-color: rgb(96, 215, 197);
+}
+
+.now, #hd1, #nc1{
+    grid-column-start: 2;
+    grid-column-end: 8;
+}
+.next, #hd2, #nc2{
+    grid-column-start: 9;
+    grid-column-end: 15;
+}
+
+/*notice*/
+#b5{
+    background-color: rgb(124, 213, 255);
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    min-height: max-content;
+    text-align: center;
+}
+.notice{
+    color: rgb(7, 0, 4);
+    background-color: rgb(199, 255, 247);
+    padding: 5px;
+}
+
+/*footer*/
+footer{
+    background-color: darkslateblue;
+    color: rgb(255, 237, 237);
+    font-size: xx-large;
+    text-align: center;
+    padding: auto;
+}
+#f1{
+    background-color: rgb(11, 15, 74);
+    color: rgb(248, 252, 255);
+    display: flex;
+    font-size:medium;
+    justify-content: right;
+    text-align:center;
+    padding-right: 20px;
+}
+
+/*link*/
+a:visited{
+    color: rgb(230, 148, 210);
+}
+a:hover{
+    color: rgb(198, 194, 243);
+    box-shadow: 0 4px 8px 0 rgb(124, 213, 255);
+    transform: scale(1.5,1.2);
+    border-radius: 20px;
+}
+a:link{
+    color: rgb(255, 255, 255);
+}
+
+/*extra*/
+.cell1:hover,.cell2:hover,.cell3:hover,.cell4:hover,.cell5:hover,.cell6:hover,.cell7:hover, .cell8:hover, .cell9:hover, .cell10:hover, .cell11:hover, .cell12:hover, .now:hover, .next:hover, .notice:hover{
+    transform: scale(1.1,1.1);
+    opacity: 0.85;
+}
